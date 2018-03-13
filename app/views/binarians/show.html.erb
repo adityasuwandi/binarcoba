@@ -1,0 +1,19 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Nama:</strong>
+  <%= @binarian.nama %>
+</p>
+
+<p>
+  <strong>Umur:</strong>
+  <%= @binarian.umur %>
+</p>
+
+<p>
+  <strong>Alamat:</strong>
+  <%= @binarian.alamat %>
+</p>
+
+<%= link_to 'Edit', edit_binarian_path(@binarian) %> |
+<%= link_to 'Back', binarians_path %>

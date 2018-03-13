@@ -1,0 +1,2 @@
+class Binarian < ApplicationRecord
+end

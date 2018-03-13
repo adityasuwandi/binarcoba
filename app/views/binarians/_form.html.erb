@@ -1,0 +1,32 @@
+<%= form_with(model: binarian, local: true) do |form| %>
+  <% if binarian.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(binarian.errors.count, "error") %> prohibited this binarian from being saved:</h2>
+
+      <ul>
+      <% binarian.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= form.label :nama %>
+    <%= form.text_field :nama, id: :binarian_nama %>
+  </div>
+
+  <div class="field">
+    <%= form.label :umur %>
+    <%= form.text_field :umur, id: :binarian_umur %>
+  </div>
+
+  <div class="field">
+    <%= form.label :alamat %>
+    <%= form.text_area :alamat, id: :binarian_alamat %>
+  </div>
+
+  <div class="actions">
+    <%= form.submit %>
+  </div>
+<% end %>
