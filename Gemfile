@@ -6,7 +6,11 @@ git_source(:github) do |repo_name|
 end
 
 # COBA UBAH GEM
-
+gem 'bcrypt', '~> 3.1', '>= 3.1.10'
+gem 'active_model_serializers'
+gem 'rack-cors'
+gem 'knock'
+gem 'jwt'
 
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails', '~> 5.1.5'
