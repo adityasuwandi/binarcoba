@@ -16,6 +16,6 @@ Rails.application.routes.draw do
  post   '/users/create'   => 'users#create'
  patch  '/user/:id'       => 'users#update'
  delete '/user/:id'       => 'users#destroy'
- #wasasasas
+
   # For details on the DSL available within this file, see http://guides.rubyonrails.org/routing.html
 end
